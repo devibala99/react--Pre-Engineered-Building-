@@ -1,0 +1,17 @@
+.home_page {
+    width: 100%;
+    overflow: hidden;
+}
+
+#img-section {
+    height: 80vh;
+    width: 100%;
+    background-image: url('../images/pattern.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.peb {
+    text-align: center;
+    margin-top: 1.5rem;
+}
