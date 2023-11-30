@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import myImage from '../images/num1.jpg';
 import "../stylesheets/homeAnimation.css"
 const HomepageAnimation = () => {
+
+    const [mousePosition, setMousePosition] = useState({
+        left: null, top: null
+    });
+
+    useEffect(() => {
+        const useMousePosition = e => {
+            setMousePosition({ left: e.clientX, top: e.clientY });
+        }
+        console.log(mousePosition);
+        window.addEventListener('mousemove', useMousePosition);
+        return () => {
+            window.removeEventListener('mousemove', useMousePosition);
+        };
+    }, [mousePosition]);
     const cursor = document.querySelector(".cb-cursor");
     window.onpointermove = event => {
         const { clientX, clientY } = event;
@@ -52,3 +67,4 @@ const HomepageAnimation = () => {
 }
 
 export default HomepageAnimation
+

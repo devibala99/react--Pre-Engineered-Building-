@@ -7,6 +7,7 @@ import ware from "../images/peb9.jpeg"
 import indus from "../images/new-banner14.jpg"
 import ImageSlider from './ImageSlider';
 import KnowUs from './KnowUs';
+import Footer from './Footer';
 
 const HomeLayout = () => {
 
@@ -95,50 +96,10 @@ const HomeLayout = () => {
                 </div>
 
             </div>
+            <Footer />
         </div>
     )
 }
 
 export default HomeLayout
 
-// <div className="peb container">
-// <h2>Our Work</h2>
-// <div className='image-slider'>
-//     <div className="control">
-//         <div className="control-up">
-//             <FaArrowCircleUp />
-//         </div>
-//         <div className="control-down">
-//             <FaArrowCircleDown />
-//         </div>
-//     </div>
-
-//     <div className="wrapper">
-//         <div className="left-content">
-//             <div>
-//                 <h2>Coimbator</h2>
-//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem obcaecati esse a aspernatur saepe nemo, reiciendis sapiente id fugit recusandae, distinctio dolor et sed.
-//                 </p>
-//             </div>
-//             <div>
-//                 <h2>Erode</h2>
-//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem obcaecati esse a aspernatur saepe nemo, reiciendis sapiente id fugit recusandae, distinctio dolor et sed.
-//                 </p>
-//             </div>
-//             <div>
-//                 <h2>Pollachi</h2>
-//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem obcaecati esse a aspernatur saepe nemo, reiciendis sapiente id fugit recusandae, distinctio dolor et sed.
-//                 </p>
-//             </div>
-
-//             <div>
-//                 <h2>Tirupur</h2>
-//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem obcaecati esse a aspernatur saepe nemo, reiciendis sapiente id fugit recusandae, distinctio dolor et sed.
-//                 </p>
-//             </div>
-
-//         </div>
-//     </div>
-// </div>
-// </div>
-// </div>
