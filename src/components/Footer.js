@@ -20,7 +20,7 @@ const Footer = () => {
                             <div>
                                 <img src={logo} alt="sklogo" />
                             </div>
-                            <div>
+                            <div className='first-section-text'>
                                 <h4>Build with Trust <br /> & <br /> Never Compromising Quality</h4>
                             </div>
                         </div>

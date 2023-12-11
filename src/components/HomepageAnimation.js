@@ -28,7 +28,7 @@ const HomepageAnimation = () => {
         }
     }
     const elements = [...document.querySelectorAll("h2 div")]
-
+    // eslint-disable-next-line
     elements.map((element, index) => {
 
         element.onmouseover = () => {

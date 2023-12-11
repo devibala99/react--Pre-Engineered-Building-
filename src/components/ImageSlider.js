@@ -1,24 +1,34 @@
 import React from 'react'
-import SimpleImageSlider from "react-simple-image-slider";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "../stylesheets/homeAnimation.css"
+import img1 from "../images/new-banner8.jpg";
+import img2 from "../images/num1.jpg";
+import img3 from "../images/new-banner6.jpg";
+import img4 from "../images/peb18.jpg";
+import img5 from "../images/roof.jpg";
+import img6 from "../images/PEB_VC_card.jpg";
 
 const images = [
-    { url: require('../images/new-banner8.jpg') },
-    { url: require('../images/num1.jpg') },
-    { url: require('../images/new-banner6.jpg') },
-    { url: require('../images/peb18.jpg') },
-    { url: require('../images/roof.jpg') },
-    { url: require('../images/PEB_VC_card.jpg') }
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6
 ];
 
 const ImageSlider = () => {
     return (
-        <SimpleImageSlider className="slider-image"
-            width={896}
-            height={504}
-            images={images}
-            showBullets={true}
-            showNavs={true}
-        />
+        <div className="box">
+            <Carousel useKeyboardArrows={true}>
+                {images.map((URL, index) => (
+                    <div className="slide">
+                        <img alt="sample_file" src={URL} key={index} />
+                    </div>
+                ))}
+            </Carousel>
+        </div>
     )
 }
 

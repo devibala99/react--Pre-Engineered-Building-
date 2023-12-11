@@ -22,10 +22,10 @@ const HomeLayout = () => {
                 <Parallax speed={-1}>
                     <div className="slow">
                         <AnimatedOnScroll className='roll-in'
-                            animationIn="bounceInRight"
+                            animationIn="fadeIn"
                             style={{
                                 marginTop: "80px",
-                                color: "green",
+
                             }}>
 
                             <h2>Why to choose PEB's over Traditional Buildings</h2>
@@ -45,7 +45,7 @@ const HomeLayout = () => {
                         </p>
                     </div>
                 </Parallax>
-                <AnimatedOnScroll animationIn="fadeInDownBig" duration="7000">
+                <AnimatedOnScroll animationIn="fadeIn">
                     <div className="fast">
                         <div className='text-fast'>
                             <h2>Our Services</h2>

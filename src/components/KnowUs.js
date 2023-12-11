@@ -1,6 +1,6 @@
 import React from 'react'
 import '../stylesheets/knowus.css'
-import img from '../images/construction-silhouette.jpg'
+import img from '../images/about.jpg'
 import { AnimatedOnScroll } from "react-animated-css-onscroll";
 
 
@@ -10,11 +10,14 @@ const KnowUs = () => {
             <div className='aboutSection'>
                 <div className="container">
                     <div className="content-column">
-                        <h2>About Us</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quas sed quisquam voluptates facilis ex cum at accusamus exercitationem eveniet tenetur debitis, commodi fugit in enim perspiciatis corrupti omnis asperiores, veniam ipsum modi. Nam, iusto laborum possimus illo vitae at.
+                        <h2>ABOUT S.K ENGINEERS</h2>
+                        <p>
+                            <span>S.K ENGINEERS</span> was established in <span>2016</span> at the prime location of <span>Coimbator</span> which is <span>ISO 9001-2015 and ISO 14001:2015 </span>certified company. We grew as <span>trusted</span> company over a period of time.
+
                             <br />
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur laborum quasi, ea facere tempore autem ullam aliquam nulla eligendi. Molestiae odit sequi nesciunt ipsum velit sit quibusdam laudantium debitis accusantium!</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat molestiae, rerum aspernatur sequi maxime quos? Fugiat vero error quasi possimus voluptate assumenda quis! Reprehenderit, deserunt.</p>
+
+                            We have great team of engineers who design and build <span>Pre-Engineered Buildings</span> in vast variety includes warehouse, industries, infrastructural buildings like school, shop, hospital, office, automobiles, logistics, etc. We provide client support to custom their buildings based on their needs. Diverse range of building designs, project management, support is our strength.
+                            <br />
                         </p>
                     </div>
                     <div className="image-column">
