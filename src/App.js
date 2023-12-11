@@ -6,6 +6,8 @@ import AboutPage from './components/AboutPage';
 import HomePage from './components/HomePage';
 import PageNotFound from './components/PageNotFound';
 import { Routes, Route } from 'react-router-dom';
+import Project from './components/Project';
+import Quote from './components/Quote';
 function App() {
     return (
         <div className="App">
@@ -14,7 +16,9 @@ function App() {
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/about" element={<AboutPage />}></Route>
                 <Route path="/service" element={<Services />}></Route>
-                <Route path="*" component={PageNotFound} />
+                <Route path="/project" element={<Project />}></Route>
+                <Route path="/quote" element={<Quote />}></Route>
+                <Route path="*" component={<PageNotFound />} />
             </Routes>
 
 

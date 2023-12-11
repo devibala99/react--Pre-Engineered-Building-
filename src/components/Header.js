@@ -15,11 +15,13 @@ const Header = () => {
                 <Link to="/" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>Home</Link>
                 <Link to="/about" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>About US</Link>
                 <Link to="/service" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>Services</Link>
-                <Link to="/" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>Projects</Link>
+                <Link to="/project" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>Projects</Link>
                 <Link to="/" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>Career</Link>
-                <Link to="/" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>Contact us</Link>
+                <Link to="/contact" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>Contact us</Link>
             </div>
-            <button className='quote-btn'>Get Quote</button>
+            <button className='quote-btn'>
+                <Link to="/quote" style={{ color: "white", textDecoration: "none" }}>Get Quote</Link>
+            </button>
             <Outlet />
         </div>
     )

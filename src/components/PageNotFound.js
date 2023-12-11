@@ -1,13 +1,13 @@
 import React from 'react'
-
+import Footer from './Footer'
 const PageNotFound = () => {
     return (
         <div style={{
-            position: "absolute", top: "50%", left: "50%", height: "80vh",
-            backgroundColor: "red", color: "white",
-            transform: "translate(-50%, -50%)", paddingTop: "10rem"
+            marginTop: "10rem",
+            height: "30vh", border: "2px solid red"
         }}>
-            Page not found
+            <h1>Page Not Found</h1>
+            <Footer />
         </div>
     )
 }
