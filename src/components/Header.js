@@ -1,7 +1,5 @@
 import React from 'react'
 import logo from "../images/nobackground.png";
-// import { FaPhone, FaXTwitter, FaEnvelope } from "react-icons/fa6";
-// import { FaStar, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { Link, Outlet } from 'react-router-dom';
 import "../stylesheets/header.css"
 const Header = () => {
@@ -16,8 +14,8 @@ const Header = () => {
                 <Link to="/about" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>About US</Link>
                 <Link to="/service" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>Services</Link>
                 <Link to="/project" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>Projects</Link>
-                <Link to="/" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>Career</Link>
                 <Link to="/contact" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>Contact us</Link>
+                <Link to="/review" className="menu-list" id="menu-list" style={{ textDecoration: "none" }}>Reviews</Link>
             </div>
             <button className='quote-btn'>
                 <Link to="/quote" style={{ color: "white", textDecoration: "none" }}>Get Quote</Link>

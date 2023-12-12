@@ -8,6 +8,8 @@ import PageNotFound from './components/PageNotFound';
 import { Routes, Route } from 'react-router-dom';
 import Project from './components/Project';
 import Quote from './components/Quote';
+import Contact from './components/Contact';
+import Reviews from './components/Reviews';
 function App() {
     return (
         <div className="App">
@@ -17,8 +19,10 @@ function App() {
                 <Route path="/about" element={<AboutPage />}></Route>
                 <Route path="/service" element={<Services />}></Route>
                 <Route path="/project" element={<Project />}></Route>
+                <Route path="/contact" element={<Contact />}></Route>
+                <Route path="/review" element={<Reviews />}></Route>
                 <Route path="/quote" element={<Quote />}></Route>
-                <Route path="*" component={<PageNotFound />} />
+                <Route path="*" element={<PageNotFound />} />
             </Routes>
 
 

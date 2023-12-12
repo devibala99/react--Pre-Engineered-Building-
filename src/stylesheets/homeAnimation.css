@@ -256,7 +256,7 @@
 
 /* image image-slider */
 
-.slider-image {
+.slider-image-part {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,11 +273,8 @@
     text-align: center;
 }
 
-/* ! slider image (ImageSlider.js component) */
 
-.slide img {
-    height: 564px;
-}
+
 
 @media(max-width: 576px) {
 

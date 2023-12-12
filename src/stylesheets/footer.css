@@ -12,6 +12,11 @@ li {
     line-height: 2;
 }
 
+.second-section Link {
+    text-decoration: none;
+    color: #fff
+}
+
 .center-section {
     position: absolute;
     top: 0%;
@@ -95,8 +100,8 @@ h2 {
 
 .fifth-section li:hover,
 .second-section li:hover,
-.third-section li:hover,
-.fourth-section li:hover {
+.third-section li Link:hover,
+.fourth-section li Link:hover {
     color: #3690bc;
     cursor: pointer;
 }

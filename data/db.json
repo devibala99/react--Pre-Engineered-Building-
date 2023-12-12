@@ -1,0 +1,45 @@
+{
+    "reviews": [
+        {
+            "id": 1,
+            "image": ".../images/tst3.jpg",
+            "name": "sathya",
+            "reviewMsg": "Great desgines and good customer support"
+        },
+        {
+            "id": 2,
+            "image": ".../images/tst3.jpg",
+            "name": "mahesh",
+            "reviewMsg": "Project is completed on time. They even give equal importance to last minute changes. Highly recommended."
+        }
+    ],
+    "QuoteDetails": [
+        {
+            "id": 92,
+            "name": "JayaSri",
+            "email": "jayasri34@gmail.com",
+            "mobile": "9087655321",
+            "company": "XYZ",
+            "city": "ABC",
+            "msg": "clientMessage"
+        },
+        {
+            "id": 2999,
+            "name": "DeviBala",
+            "email": "devibala9@gmail.com",
+            "mobile": "987452136",
+            "company": "XYZ",
+            "city": "ZYX",
+            "msg": "Need PEB for interiors"
+        },
+        {
+            "id": 1983,
+            "name": "Mahesh",
+            "email": "mahesh57@gmail.com",
+            "mobile": "8795463210",
+            "company": "NNNN",
+            "city": "MMMM",
+            "msg": "Business Proposal"
+        }
+    ]
+}
