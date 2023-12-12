@@ -48,7 +48,7 @@ const HomeLayout = () => {
                 <AnimatedOnScroll animationIn="fadeIn">
                     <div className="fast">
                         <div className='text-fast'>
-                            <h2>Our Services</h2>
+                            <h2>Our Solutions</h2>
                             <p>We'he got all kind of solutions across pre engineered buildings.</p>
                         </div>
 
@@ -87,7 +87,7 @@ const HomeLayout = () => {
 
                 </AnimatedOnScroll>
 
-                <div className="slider-image">
+                <div className="slider-image-part">
                     <div className='slider-text'>
                         <h2>Our Work</h2>
                         <p>Modern and highly scalable design by our team.</p>

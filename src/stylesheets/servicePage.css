@@ -1,0 +1,142 @@
+.service-container {
+    width: 100%;
+    /* background-image: url("../images/tx.avif"); */
+    background-size: cover;
+}
+
+.service-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.service-image {
+    width: 100%;
+    background-image: url("../images/steelRoof.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#service-title {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(-200deg, #cd1e2d 0%,
+            #000000db 50%, #000 67%,
+            #000000db 100%);
+
+    background-size: auto, auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: about-clip 4s linear infinite;
+    display: inline-block;
+}
+
+@keyframes about-clip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.service-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+
+
+}
+
+.peb-content-service {
+    width: 100%;
+    line-height: 2;
+    font-size: 1.15rem;
+}
+
+.peb-service-images {
+    width: 40%;
+    background-image: url("../images/low-angle-view-building-ceiling.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    border: 2px solid purple;
+}
+
+.peb-content-service li {
+    list-style-type: none;
+}
+
+.service-types-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+@media (max-width:"992px") {
+    .peb-content-service {
+        padding: 1rem;
+    }
+
+    .service-content {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .peb-service-images,
+    .peb-content-service {
+        width: 80%;
+    }
+
+}
+
+@media(max-width: 576px) {
+    .peb-content-service {
+        padding: 1rem;
+    }
+
+    .service-content {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .peb-service-images,
+    .peb-content-service {
+        width: 80%;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .peb-content-service {
+        padding: 1rem;
+    }
+
+    .service-content {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .peb-service-images,
+    .peb-content-service {
+        width: 80%;
+    }
+}

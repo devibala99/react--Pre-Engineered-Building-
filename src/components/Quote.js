@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 import Footer from './Footer'
 import "../stylesheets/quote.css"
 import "../stylesheets/aboutPage.css"
+import axios from 'axios'
+
 const Quote = () => {
 
+    const QUOTE_URL = "http://localhost:3500/QuoteDetails";
     const [clientName, setClientName] = useState("");
     const [clientEmail, setClientEmail] = useState("");
     const [clientMobile, setClientMobile] = useState("");
@@ -12,16 +15,12 @@ const Quote = () => {
     const [clientMessage, setClientMessgee] = useState("");
 
     const [queryDetails, setQueryDetails] = useState([]);
-    const handleSubmit = () => {
-        const queryClientDetails = {
-            name: clientName,
-            email: clientEmail,
-            mobile: clientMobile,
-            company: clientCompany,
-            city: clientCity,
-            msg: clientMessage
-        };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const idValue = Math.floor(Math.random() * 5000);
         setQueryDetails([...queryDetails, {
+            id: idValue,
             name: clientName,
             email: clientEmail,
             mobile: clientMobile,
@@ -30,7 +29,19 @@ const Quote = () => {
             msg: clientMessage
         }]);
 
-        console.log(queryClientDetails);
+        axios.post(QUOTE_URL, {
+            id: idValue,
+            name: clientName,
+            email: clientEmail,
+            mobile: clientMobile,
+            company: clientCompany,
+            city: clientCity,
+            msg: clientMessage
+        }).then(res => {
+            console.log(res.data);
+        });
+
+
 
         setClientName("");
         setClientEmail("");
@@ -40,8 +51,6 @@ const Quote = () => {
         setClientMessgee("");
     }
 
-
-    console.log(queryDetails);
     return (
         <div className='quote-container'>
 
@@ -84,12 +93,8 @@ const Quote = () => {
                                 onChange={(e) => setClientMessgee(e.target.value)} />
                         </div>
                         <div className="form-list btn-cls">
-                            <button id="sub-btn" onClick={handleSubmit}>Submit</button>
+                            <button id="sub-btn" onClick={(e) => handleSubmit(e)}>Submit</button>
                         </div>
-
-
-
-
                     </form>
                 </div>
             </div>

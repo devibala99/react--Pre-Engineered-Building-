@@ -4,6 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import logo from "../images/nobackground.png";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter, } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div class="footer-sticky-bottom">
@@ -27,31 +28,31 @@ const Footer = () => {
                         <div className='second-section'>
                             <h2>Company</h2>
                             <ul>
-                                <li>Home</li>
-                                <li>About Us</li>
-                                <li>Services</li>
-                                <li>Projects</li>
-                                <li>Career</li>
-                                <li>Contact</li>
-                                <li>Reviews</li>
+                                <li><Link id="link-id" to="/" style={{ textDecoration: "none", color: "white", }}>Home</Link></li>
+                                <li><Link to="/about" style={{ textDecoration: "none", color: "white" }}>About Us</Link></li>
+                                <li><Link to="/service" style={{ textDecoration: "none", color: "white" }}>Services</Link></li>
+                                <li><Link to="/project" style={{ textDecoration: "none", color: "white" }}>Projects</Link></li>
+                                <li><Link to="/contact" style={{ textDecoration: "none", color: "white" }}>Contact Us</Link></li>
+                                <li><Link to="/review" style={{ textDecoration: "none", color: "white" }}>Reviews</Link></li>
                             </ul>
                         </div>
                         <div className='third-section'>
                             <h2>Engineering Solutions</h2>
                             <ul>
-                                <li>Infrastructure</li>
-                                <li>Industrial</li>
-                                <li>Warehousing</li>
+                                <li><Link to="/service" style={{ textDecoration: "none", color: "white" }}>Infrastructure</Link></li>
+                                <li><Link to="/service" style={{ textDecoration: "none", color: "white" }}>Industrial</Link></li>
+                                <li><Link to="/service" style={{ textDecoration: "none", color: "white" }}>Warehousing</Link></li>
                             </ul>
                         </div>
                         <div className='fourth-section'>
                             <h2>Our Services</h2>
+
                             <ul>
-                                <li>Ceiling</li>
-                                <li>Cladding</li>
-                                <li>Floor</li>
-                                <li>Pre-engineered Building</li>
-                                <li>Wall</li>
+                                <li><Link to="/service" style={{ textDecoration: "none", color: "white" }}>Ceiling</Link></li>
+                                <li><Link to="/service" style={{ textDecoration: "none", color: "white" }}>Clading</Link></li>
+                                <li><Link to="/service" style={{ textDecoration: "none", color: "white" }}>Pre-Engineered Buildings</Link></li>
+                                <li><Link to="/service" style={{ textDecoration: "none", color: "white" }}>Roofs and Walls</Link></li>
+
                             </ul>
                         </div>
                         <div className='fifth-section'>
